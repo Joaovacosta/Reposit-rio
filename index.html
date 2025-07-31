@@ -1,42 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
+  <meta charset="UTF-8">
+  <title>Mostrar Imagem</title>
   <style>
+    body {
+      background-color: black;
+      text-align: center;
+      padding-top: 50px;
+    }
+
     .botao {
-      background-color: #28a745;
-      color: white;
-      padding: 10px 20px;
+      background-color: white;
+      color: black;
+      padding: 12px 24px;
       border: none;
-      border-radius: 8px;
-      font-size: 16px;
+      border-radius: 12px;
+      font-size: 18px;
       cursor: pointer;
     }
 
     #minhaImagem {
-      display: none; /* Esconde a imagem até o clique */
-      margin-top: 20px;
+      display: none;
+      margin-top: 30px;
       width: 300px;
+      border-radius: 10px;
     }
   </style>
 </head>
 <body>
 
-  <button class="botao" onclick="mostrarImagem()">Mostrar Imagem</button>
+  <button class="botao" onclick="mostrarImagem()">Clique aqui</button>
 
-  <br><br>
+  <br>
 
-  <img id="minhaImagem" src="https://i.pinimg.com/736x/c7/e5/96/c7e5969800e68ebd2e7339171e81379c.jpg" alt="Imagem Exemplo">
+  <img id="minhaImagem" src="https://i.pinimg.com/736x/c7/e5/96/c7e5969800e68ebd2e7339171e81379c.jpg" alt="Imagem" />
 
   <script>
     function mostrarImagem() {
       document.getElementById("minhaImagem").style.display = "block";
     }
   </script>
-  <div style="text-align: center;">
-    <h1>Vai Corinthians!</h1>
-    <p>CHORA PORCO IMUNDO</p>
+
 </body>
 </html>
-      
-
-
